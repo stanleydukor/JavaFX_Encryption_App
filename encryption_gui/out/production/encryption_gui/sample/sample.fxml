@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="911.0" styleClass="main" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTextArea fx:id="inputText" focusColor="CORNFLOWERBLUE" labelFloat="true" layoutX="22.0" layoutY="114.0" prefHeight="219.0" prefWidth="533.0" styleClass="box" unFocusColor="#4d4d4d00" />
+      <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="652.0" layoutY="185.0" onAction="#getData" prefHeight="39.0" prefWidth="223.0" styleClass="btn" text="Encrypt">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#222222" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btn2" buttonType="RAISED" layoutX="652.0" layoutY="479.0" onAction="#printData" prefHeight="39.0" prefWidth="223.0" styleClass="btn" text="Decrypt">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#393939" />
+         </effect>
+      </JFXButton>
+      <JFXPasswordField fx:id="ki" labelFloat="true" layoutX="652.0" layoutY="114.0" prefHeight="39.0" prefWidth="223.0" promptText="Enter key">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="newKi" labelFloat="true" layoutX="652.0" layoutY="416.0" prefHeight="39.0" prefWidth="223.0" promptText="Enter key">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="71.0" prefWidth="911.0" styleClass="title" text="El Crypto">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="outputText" focusColor="CORNFLOWERBLUE" labelFloat="true" layoutX="22.0" layoutY="416.0" prefHeight="219.0" prefWidth="533.0" styleClass="box" unFocusColor="#4d4d4d00" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="356.0" AnchorPane.topAnchor="416.0" />
+      <Label fx:id="confirm" alignment="CENTER" layoutX="652.0" layoutY="247.0" prefHeight="86.0" prefWidth="223.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmD" alignment="CENTER" layoutX="652.0" layoutY="549.0" prefHeight="86.0" prefWidth="223.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="clear" layoutX="250.0" layoutY="356.0" onAction="#clearScreen" prefHeight="39.0" prefWidth="77.0" styleClass="btnReset" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2c2c2c" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

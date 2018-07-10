@@ -1,0 +1,28 @@
+.btn {
+    -fx-background-color: cornflowerblue;
+}
+
+.btn:hover {
+    -fx-background-color: gray;
+}
+
+.title {
+    -fx-background-color: #6495ed;
+}
+
+.main {
+    -fx-background-color: lightgrey;
+}
+
+.box {
+    -fx-border-color: cornflowerblue;
+    -fx-padding: 20px;
+}
+
+.btnReset {
+    -fx-background-color: darkgrey;
+}
+
+.btnReset:hover {
+    -fx-background-color: gray;
+}
